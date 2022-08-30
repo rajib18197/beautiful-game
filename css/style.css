@@ -3,11 +3,10 @@
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .hero {
-  height: 80vh;
   background-color: #101d37;
   border-radius: 2rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -20,7 +19,6 @@
 }
 
 .hero-text-box {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +34,6 @@
 }
 
 .hero-img-box {
-  height: 100%;
   animation: moveInRight 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .hero-img {
@@ -45,6 +42,8 @@
   object-position: top;
   object-fit: cover;
 }
+
+/*======== HERO SECTION ANIMATION ========*/
 
 @keyframes moveInLeft {
   0% {
@@ -154,7 +153,12 @@
   align-items: center;
   gap: 0.6rem;
 }
-
+/* Button Container [Not Visible on Desktop View] */
+.btn-container {
+  text-align: center;
+  margin-top: 4rem;
+  display: none;
+}
 /*======== MATCH DETAILS ========*/
 
 .match-details {
@@ -220,6 +224,7 @@
 
 .navigation {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;

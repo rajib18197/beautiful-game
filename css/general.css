@@ -24,6 +24,7 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+
 .heading-primary {
   font-size: 6.2rem;
   font-weight: 700;
@@ -85,10 +86,4 @@ body {
 .btn-active:hover,
 .btn-active:active {
   background-color: #cc2020;
-}
-
-.btn-container {
-  text-align: center;
-  margin-top: 4rem;
-  display: none;
 }
