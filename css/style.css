@@ -1,3 +1,5 @@
+/*======== HERO SECTION ========*/
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -19,6 +21,10 @@
 
 .hero-text-box {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   animation: moveInLeft 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -34,11 +40,10 @@
   animation: moveInRight 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .hero-img {
-  width: 120%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   object-position: top;
   object-fit: cover;
-  transform: translateY(-7rem) translateX(-7rem);
 }
 
 @keyframes moveInLeft {
@@ -74,13 +79,15 @@
     opacity: 1;
   }
 }
+
+/*======== OVERVIEW SECTION ========*/
+
 .section-overview {
   margin: 10rem 0;
 }
 
 .overviews {
   display: flex;
-  /* grid-template-columns: 1fr 4fr; */
   gap: 1.5rem;
 }
 
@@ -114,6 +121,7 @@
 .overviews-img {
   width: 100%;
   height: 100%;
+  object-position: top;
   object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -141,19 +149,26 @@
   font-size: 1.6rem;
 }
 
+.overviews-info-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/*======== MATCH DETAILS ========*/
+
 .match-details {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-items: center; */
   align-items: center;
   gap: 2rem;
 }
-.matches {
+.match {
   padding: 3rem 1rem;
   border: 1px solid rgb(211, 207, 207);
 }
-.matches-photo {
+.match-photo {
   text-align: center;
   height: 10rem;
   display: flex;
@@ -162,17 +177,17 @@
   gap: 2rem;
 }
 
-.matches-photo span {
+.match-photo span {
   font-size: 1.6rem;
   font-weight: 800;
 }
 
-.matches-photo img {
+.match-photo img {
   height: 50%;
   object-fit: cover;
 }
 
-.matches-info {
+.match-info {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -181,9 +196,12 @@
   font-size: 1.3rem;
 }
 
-.matches-info .heading-tertiary {
+.match-info .heading-tertiary {
   font-size: 2rem;
 }
+
+/*======== FOOTER ========*/
+
 .footer {
   background-color: #101d37;
   padding: 8rem;
@@ -202,6 +220,7 @@
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;
 }
@@ -212,4 +231,20 @@
   color: white;
   text-decoration: none;
   padding: 1.6rem 3.2rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.link {
+  background-color: #141c2b;
+  box-shadow: 0 2rem 4rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  color: #ca8955;
 }
